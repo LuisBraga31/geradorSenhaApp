@@ -1,4 +1,4 @@
-# Projeto de um Aplicativo de Gerador de Senhas com React Native
+# Projeto de um Aplicativo de Gerador de Senhas
 
 Esse projeto foi o desenvolvimento de um aplicativo de gerar senhas utilizando React Native e o Android Studio como emulador.
 
