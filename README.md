@@ -3,7 +3,8 @@
 Esse projeto foi o desenvolvimento de um aplicativo de gerar senhas utilizando React Native e o Android Studio como emulador.
 
 ## Imagem do Projeto
-![project](https://github.com/user-attachments/assets/c0d6bac9-cd4c-4d8d-88e9-10bcdad4e88a)
+![project](https://github.com/user-attachments/assets/020e1d54-982c-459b-bf7e-9ed7c5fb3722)
+
 
 ## Tecnologias Utilizadas:
 
