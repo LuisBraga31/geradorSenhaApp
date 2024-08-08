@@ -1,9 +1,22 @@
+import { useState } from 'react';
 import { View, Text, StyleSheet, Pressable } from 'react-native';
 
+import { Ionicons } from '@expo/vector-icons'
+
 export default function PasswordItem({data, removePassword}) {
+
+  const [showPassword, setShowPassword] = useState(true);
+ 
+  const togglePassword = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <Pressable onLongPress={removePassword} style={styles.container}>
-        <Text style={styles.text}> {data} </Text>
+        {showPassword ? <Text style={styles.text}> {data} </Text>
+                      : <Text style={styles.textOcult}> *********************</Text>}
+        {showPassword ? <Ionicons onPress={togglePassword} style={styles.text} size={20} name="eye-outline"/>
+                      : <Ionicons onPress={togglePassword} style={styles.text} size={20} name="eye-off-outline"/>}
     </Pressable>
   )
 }
@@ -21,5 +34,10 @@ const styles = StyleSheet.create({
     },
     text: {
         color: '#fff'
+    },
+    textOcult: {
+      color: '#fff',
+      backgroundColor: '#fff',
+      borderRadius: 8,
     }
 })
